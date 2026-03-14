@@ -79,6 +79,20 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .logo-container {
+            position: absolute;
+            top: 30px; /* Distance from the top of the screen */
+            left: 50%;
+            transform: translateX(-50%); /* Perfectly centers it */
+            z-index: 20; /* Ensures it sits above the background and text */
+        }
+        
+        .logo-container img {
+            height: 60px; /* Adjust this to make it smaller or larger */
+            width: auto;
+            /* Optional: adds a slight fade to make it look "integrated" */
+            opacity: 0.9;
+        }
 
         .main-title {
             color: var(--clr-gold);
@@ -172,6 +186,12 @@
 <body>
 
     <section class="hero">
+        <section class="hero">
+            <div class="logo-container">
+                <img src="tropitel images/logo.jpeg" alt="Tropitel Dahab Oasis Logo">
+            </div>
+    
+    <div class="hero-bg" id="bg"></div>
         <div class="hero-bg" id="bg"></div>
 
         <div class="hero-content" id="content">
